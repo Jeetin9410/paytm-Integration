@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_merchant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Checksum">
+    <!-- Action-bar looking view -->
+
+
+
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Congratulations!"
+        android:textColor="#4c71f5"
+        android:textSize="23sp"
+        />
+
+
+    <TextView
+        android:id="@+id/paymentsDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_status"
+        android:text="Payment details"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@+id/paymentsDetails"
+        android:layout_marginTop="10dp"
+        android:id="@+id/refrenceIdDetails"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bank Txn ID              :"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:id="@+id/refrenceid"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:id="@+id/refrenceIdText"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@+id/refrenceIdDetails"
+        android:layout_marginTop="10dp"
+        android:id="@+id/paymentMode">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Payment Mode         : "
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:id="@+id/paymentmode"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/paymentModeText"
+            android:gravity="center"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@+id/paymentMode"
+        android:layout_marginTop="10dp"
+        android:id="@+id/transactionStatusDetails">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Transaction Status   : "
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:id="@+id/transactionstatus"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/transactionStatusText"
+            android:gravity="center"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@+id/transactionStatusDetails"
+        android:layout_marginTop="10dp"
+        android:id="@+id/transactionTimeStatus">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Transaction ID           : "
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:id="@+id/transactiontime"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/transactionTimeText"
+            android:gravity="center"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
